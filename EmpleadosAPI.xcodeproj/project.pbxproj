@@ -6,17 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FC0C76D12DA6EA6E0017B608 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0C76CB2DA6EA6E0017B608 /* Preview Assets.xcassets */; };
+		FC0C76D22DA6EA6E0017B608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0C76CD2DA6EA6E0017B608 /* Assets.xcassets */; };
+		FC0C76D32DA6EA6E0017B608 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76CE2DA6EA6E0017B608 /* ContentView.swift */; };
+		FC0C76D42DA6EA6E0017B608 /* EmpleadosAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76CF2DA6EA6E0017B608 /* EmpleadosAPIApp.swift */; };
+		FC0C76D72DA6EAAF0017B608 /* EmpleadoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76D62DA6EAAF0017B608 /* EmpleadoDTO.swift */; };
+		FC0C76D92DA6EB210017B608 /* Empleado.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76D82DA6EB210017B608 /* Empleado.swift */; };
+		FC0C76DB2DA6EB420017B608 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76DA2DA6EB420017B608 /* Enums.swift */; };
+		FC0C76DF2DA6ED7F0017B608 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76DE2DA6ED7F0017B608 /* URL.swift */; };
+		FC0C76E12DA703FC0017B608 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76E02DA703FC0017B608 /* URLRequest.swift */; };
+		FC0C76E32DA707290017B608 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76E22DA707290017B608 /* NetworkError.swift */; };
+		FC0C76E52DA7079A0017B608 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76E42DA7079A0017B608 /* URLSession.swift */; };
+		FC0C76E72DA7084E0017B608 /* NetworkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76E62DA7084E0017B608 /* NetworkInteractor.swift */; };
+		FC0C76EA2DA70BAA0017B608 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76E92DA70BAA0017B608 /* Repository.swift */; };
+		FC0C76EC2DA70E1F0017B608 /* APIDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76EB2DA70E1F0017B608 /* APIDTO.swift */; };
+		FC0C76EF2DA7111C0017B608 /* EmpleadosVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76EE2DA7111C0017B608 /* EmpleadosVM.swift */; };
+		FC0C76F22DA7176C0017B608 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76F12DA7176C0017B608 /* RepositoryTest.swift */; };
+		FC0C76F42DA71A3E0017B608 /* EmpleadosTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = FC0C76F32DA71A3E0017B608 /* EmpleadosTesting.json */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FC0C76BA2DA6EA660017B608 /* EmpleadosAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpleadosAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0C76CB2DA6EA6E0017B608 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC0C76CD2DA6EA6E0017B608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC0C76CE2DA6EA6E0017B608 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC0C76CF2DA6EA6E0017B608 /* EmpleadosAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadosAPIApp.swift; sourceTree = "<group>"; };
+		FC0C76D62DA6EAAF0017B608 /* EmpleadoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadoDTO.swift; sourceTree = "<group>"; };
+		FC0C76D82DA6EB210017B608 /* Empleado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empleado.swift; sourceTree = "<group>"; };
+		FC0C76DA2DA6EB420017B608 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FC0C76DE2DA6ED7F0017B608 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		FC0C76E02DA703FC0017B608 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		FC0C76E22DA707290017B608 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FC0C76E42DA7079A0017B608 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		FC0C76E62DA7084E0017B608 /* NetworkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInteractor.swift; sourceTree = "<group>"; };
+		FC0C76E92DA70BAA0017B608 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FC0C76EB2DA70E1F0017B608 /* APIDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDTO.swift; sourceTree = "<group>"; };
+		FC0C76EE2DA7111C0017B608 /* EmpleadosVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadosVM.swift; sourceTree = "<group>"; };
+		FC0C76F12DA7176C0017B608 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		FC0C76F32DA71A3E0017B608 /* EmpleadosTesting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmpleadosTesting.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		FC0C76BC2DA6EA660017B608 /* EmpleadosAPI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EmpleadosAPI;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC0C76B72DA6EA660017B608 /* Frameworks */ = {
@@ -32,7 +61,7 @@
 		FC0C76B12DA6EA660017B608 = {
 			isa = PBXGroup;
 			children = (
-				FC0C76BC2DA6EA660017B608 /* EmpleadosAPI */,
+				FC0C76D02DA6EA6E0017B608 /* EmpleadosAPI */,
 				FC0C76BB2DA6EA660017B608 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +72,78 @@
 				FC0C76BA2DA6EA660017B608 /* EmpleadosAPI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FC0C76CC2DA6EA6E0017B608 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C76CB2DA6EA6E0017B608 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC0C76D02DA6EA6E0017B608 /* EmpleadosAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C76CE2DA6EA6E0017B608 /* ContentView.swift */,
+				FC0C76ED2DA711010017B608 /* ViewModels */,
+				FC0C76E82DA70B880017B608 /* Repository */,
+				FC0C76DD2DA6ECB00017B608 /* Interface */,
+				FC0C76D52DA6EA990017B608 /* Model */,
+				FC0C76F02DA717330017B608 /* Resources */,
+				FC0C76CC2DA6EA6E0017B608 /* Preview Content */,
+				FC0C76CD2DA6EA6E0017B608 /* Assets.xcassets */,
+				FC0C76CF2DA6EA6E0017B608 /* EmpleadosAPIApp.swift */,
+			);
+			path = EmpleadosAPI;
+			sourceTree = "<group>";
+		};
+		FC0C76D52DA6EA990017B608 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C76D62DA6EAAF0017B608 /* EmpleadoDTO.swift */,
+				FC0C76D82DA6EB210017B608 /* Empleado.swift */,
+				FC0C76DA2DA6EB420017B608 /* Enums.swift */,
+				FC0C76EB2DA70E1F0017B608 /* APIDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC0C76DD2DA6ECB00017B608 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C76DE2DA6ED7F0017B608 /* URL.swift */,
+				FC0C76E22DA707290017B608 /* NetworkError.swift */,
+				FC0C76E42DA7079A0017B608 /* URLSession.swift */,
+				FC0C76E02DA703FC0017B608 /* URLRequest.swift */,
+				FC0C76E62DA7084E0017B608 /* NetworkInteractor.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		FC0C76E82DA70B880017B608 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C76E92DA70BAA0017B608 /* Repository.swift */,
+				FC0C76F12DA7176C0017B608 /* RepositoryTest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FC0C76ED2DA711010017B608 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C76EE2DA7111C0017B608 /* EmpleadosVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FC0C76F02DA717330017B608 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC0C76F32DA71A3E0017B608 /* EmpleadosTesting.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +160,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				FC0C76BC2DA6EA660017B608 /* EmpleadosAPI */,
 			);
 			name = EmpleadosAPI;
 			packageProductDependencies = (
@@ -109,6 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0C76F42DA71A3E0017B608 /* EmpleadosTesting.json in Resources */,
+				FC0C76D12DA6EA6E0017B608 /* Preview Assets.xcassets in Resources */,
+				FC0C76D22DA6EA6E0017B608 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +220,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0C76EC2DA70E1F0017B608 /* APIDTO.swift in Sources */,
+				FC0C76D92DA6EB210017B608 /* Empleado.swift in Sources */,
+				FC0C76E32DA707290017B608 /* NetworkError.swift in Sources */,
+				FC0C76E12DA703FC0017B608 /* URLRequest.swift in Sources */,
+				FC0C76D32DA6EA6E0017B608 /* ContentView.swift in Sources */,
+				FC0C76DB2DA6EB420017B608 /* Enums.swift in Sources */,
+				FC0C76EA2DA70BAA0017B608 /* Repository.swift in Sources */,
+				FC0C76E52DA7079A0017B608 /* URLSession.swift in Sources */,
+				FC0C76D72DA6EAAF0017B608 /* EmpleadoDTO.swift in Sources */,
+				FC0C76E72DA7084E0017B608 /* NetworkInteractor.swift in Sources */,
+				FC0C76D42DA6EA6E0017B608 /* EmpleadosAPIApp.swift in Sources */,
+				FC0C76F22DA7176C0017B608 /* RepositoryTest.swift in Sources */,
+				FC0C76DF2DA6ED7F0017B608 /* URL.swift in Sources */,
+				FC0C76EF2DA7111C0017B608 /* EmpleadosVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jongonzalez.EmpleadosAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jongonzalez.EmpleadosAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
