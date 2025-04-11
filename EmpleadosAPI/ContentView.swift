@@ -11,33 +11,23 @@ struct ContentView: View {
     @State var vm = EmpleadosVM()
 
     var body: some View {
-        List(vm.empleados) { empleado in
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("\(empleado.lastName), \(empleado.firstName)")
-                        .font(.headline)
-                    Text(empleado.email)
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
+        NavigationStack {
+            List {
+                ForEach(Departamento.allCases) { dpto in
+                    Section {
+                        ForEach(vm.getEmpleadosByDpto(dpto)) { empleado in
+                            NavigationLink(value: empleado) {
+                                EmpleadoCell(empleado: empleado)
+                            }
+                        }
+                    } header: {
+                        Text(dpto.descripcion)
+                    }
                 }
-                Spacer()
-                AsyncImage(url: empleado.avatarURL) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 75)
-                        .background(Color.gray.opacity(0.2))
-                        .clipShape(Circle())
-                } placeholder: {
-                    Image(systemName: "person")
-                        .resizable()
-                        .scaledToFit()
-                        .padding()
-                        .frame(width: 75)
-                        .background(Color.gray.opacity(0.2))
-                        .clipShape(Circle())
-                }
-
+            }
+            .navigationTitle("Employees")
+            .navigationDestination(for: Empleado.self) { empleado in
+                EmpleadoEditView(vm: EmpleadoEditVM(empleado: empleado))
             }
         }
         .alert("Employee data error",

@@ -24,6 +24,13 @@
 		FC0C76EF2DA7111C0017B608 /* EmpleadosVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76EE2DA7111C0017B608 /* EmpleadosVM.swift */; };
 		FC0C76F22DA7176C0017B608 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0C76F12DA7176C0017B608 /* RepositoryTest.swift */; };
 		FC0C76F42DA71A3E0017B608 /* EmpleadosTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = FC0C76F32DA71A3E0017B608 /* EmpleadosTesting.json */; };
+		FC12C4E92DA839F2005F0193 /* EmpleadoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4E82DA839F2005F0193 /* EmpleadoCell.swift */; };
+		FC12C4EC2DA83A2C005F0193 /* EmpleadoAvatarOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4EB2DA83A2C005F0193 /* EmpleadoAvatarOld.swift */; };
+		FC12C4EE2DA83AE8005F0193 /* EmpleadoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4ED2DA83AE8005F0193 /* EmpleadoEditView.swift */; };
+		FC12C4F02DA83AFD005F0193 /* EmpleadoEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4EF2DA83AFD005F0193 /* EmpleadoEditVM.swift */; };
+		FC12C4F22DA841F2005F0193 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4F12DA841F2005F0193 /* ImageDownloader.swift */; };
+		FC12C4F42DA843E6005F0193 /* AsyncImageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4F32DA843E6005F0193 /* AsyncImageVM.swift */; };
+		FC12C4F62DA85F51005F0193 /* EmpleadoAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4F52DA85F51005F0193 /* EmpleadoAvatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +52,13 @@
 		FC0C76EE2DA7111C0017B608 /* EmpleadosVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadosVM.swift; sourceTree = "<group>"; };
 		FC0C76F12DA7176C0017B608 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
 		FC0C76F32DA71A3E0017B608 /* EmpleadosTesting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmpleadosTesting.json; sourceTree = "<group>"; };
+		FC12C4E82DA839F2005F0193 /* EmpleadoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadoCell.swift; sourceTree = "<group>"; };
+		FC12C4EB2DA83A2C005F0193 /* EmpleadoAvatarOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadoAvatarOld.swift; sourceTree = "<group>"; };
+		FC12C4ED2DA83AE8005F0193 /* EmpleadoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadoEditView.swift; sourceTree = "<group>"; };
+		FC12C4EF2DA83AFD005F0193 /* EmpleadoEditVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadoEditVM.swift; sourceTree = "<group>"; };
+		FC12C4F12DA841F2005F0193 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		FC12C4F32DA843E6005F0193 /* AsyncImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageVM.swift; sourceTree = "<group>"; };
+		FC12C4F52DA85F51005F0193 /* EmpleadoAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadoAvatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				FC0C76CE2DA6EA6E0017B608 /* ContentView.swift */,
+				FC12C4ED2DA83AE8005F0193 /* EmpleadoEditView.swift */,
+				FC12C4EA2DA83A19005F0193 /* Components */,
 				FC0C76ED2DA711010017B608 /* ViewModels */,
 				FC0C76E82DA70B880017B608 /* Repository */,
 				FC0C76DD2DA6ECB00017B608 /* Interface */,
@@ -126,6 +142,7 @@
 			children = (
 				FC0C76E92DA70BAA0017B608 /* Repository.swift */,
 				FC0C76F12DA7176C0017B608 /* RepositoryTest.swift */,
+				FC12C4F12DA841F2005F0193 /* ImageDownloader.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -134,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				FC0C76EE2DA7111C0017B608 /* EmpleadosVM.swift */,
+				FC12C4EF2DA83AFD005F0193 /* EmpleadoEditVM.swift */,
+				FC12C4F32DA843E6005F0193 /* AsyncImageVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -144,6 +163,16 @@
 				FC0C76F32DA71A3E0017B608 /* EmpleadosTesting.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC12C4EA2DA83A19005F0193 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FC12C4E82DA839F2005F0193 /* EmpleadoCell.swift */,
+				FC12C4EB2DA83A2C005F0193 /* EmpleadoAvatarOld.swift */,
+				FC12C4F52DA85F51005F0193 /* EmpleadoAvatar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,16 +249,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC12C4E92DA839F2005F0193 /* EmpleadoCell.swift in Sources */,
 				FC0C76EC2DA70E1F0017B608 /* APIDTO.swift in Sources */,
 				FC0C76D92DA6EB210017B608 /* Empleado.swift in Sources */,
 				FC0C76E32DA707290017B608 /* NetworkError.swift in Sources */,
 				FC0C76E12DA703FC0017B608 /* URLRequest.swift in Sources */,
+				FC12C4F02DA83AFD005F0193 /* EmpleadoEditVM.swift in Sources */,
+				FC12C4EC2DA83A2C005F0193 /* EmpleadoAvatarOld.swift in Sources */,
 				FC0C76D32DA6EA6E0017B608 /* ContentView.swift in Sources */,
+				FC12C4F22DA841F2005F0193 /* ImageDownloader.swift in Sources */,
 				FC0C76DB2DA6EB420017B608 /* Enums.swift in Sources */,
 				FC0C76EA2DA70BAA0017B608 /* Repository.swift in Sources */,
 				FC0C76E52DA7079A0017B608 /* URLSession.swift in Sources */,
 				FC0C76D72DA6EAAF0017B608 /* EmpleadoDTO.swift in Sources */,
+				FC12C4F42DA843E6005F0193 /* AsyncImageVM.swift in Sources */,
+				FC12C4F62DA85F51005F0193 /* EmpleadoAvatar.swift in Sources */,
 				FC0C76E72DA7084E0017B608 /* NetworkInteractor.swift in Sources */,
+				FC12C4EE2DA83AE8005F0193 /* EmpleadoEditView.swift in Sources */,
 				FC0C76D42DA6EA6E0017B608 /* EmpleadosAPIApp.swift in Sources */,
 				FC0C76F22DA7176C0017B608 /* RepositoryTest.swift in Sources */,
 				FC0C76DF2DA6ED7F0017B608 /* URL.swift in Sources */,

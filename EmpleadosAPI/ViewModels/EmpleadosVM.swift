@@ -31,4 +31,8 @@ final class EmpleadosVM {
             showAlert.toggle()
         }
     }
+
+    func getEmpleadosByDpto(_ dpto: Departamento) -> [Empleado] {
+        empleados.filter { $0.department == dpto }
+    }
 }
