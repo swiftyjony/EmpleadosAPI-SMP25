@@ -1,0 +1,15 @@
+{
+  "originHash" : "589989d888e6df00e80bf595e4bfeb319c4c1d73a794827c3a18f473d938d591",
+  "pins" : [
+    {
+      "identity" : "compokit-smp25",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftyjony/CompoKit-SMP25",
+      "state" : {
+        "revision" : "e400a0f85343c8fda3f5c3eff972afe2917f3797",
+        "version" : "0.1.4"
+      }
+    }
+  ],
+  "version" : 3
+}

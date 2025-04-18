@@ -31,6 +31,9 @@
 		FC12C4F22DA841F2005F0193 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4F12DA841F2005F0193 /* ImageDownloader.swift */; };
 		FC12C4F42DA843E6005F0193 /* AsyncImageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4F32DA843E6005F0193 /* AsyncImageVM.swift */; };
 		FC12C4F62DA85F51005F0193 /* EmpleadoAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12C4F52DA85F51005F0193 /* EmpleadoAvatar.swift */; };
+		FC4C8B112DA993BF00A0E315 /* LabelFormStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C8B102DA993BF00A0E315 /* LabelFormStyle.swift */; };
+		FC4C8B132DA9B22E00A0E315 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FC4C8B122DA9B22E00A0E315 /* Localizable.xcstrings */; };
+		FC4C8B1E2DB25FD300A0E315 /* CompoKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC4C8B1D2DB25FD300A0E315 /* CompoKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,8 @@
 		FC12C4F12DA841F2005F0193 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		FC12C4F32DA843E6005F0193 /* AsyncImageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageVM.swift; sourceTree = "<group>"; };
 		FC12C4F52DA85F51005F0193 /* EmpleadoAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpleadoAvatar.swift; sourceTree = "<group>"; };
+		FC4C8B102DA993BF00A0E315 /* LabelFormStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFormStyle.swift; sourceTree = "<group>"; };
+		FC4C8B122DA9B22E00A0E315 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4C8B1E2DB25FD300A0E315 /* CompoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +112,7 @@
 				FC0C76E82DA70B880017B608 /* Repository */,
 				FC0C76DD2DA6ECB00017B608 /* Interface */,
 				FC0C76D52DA6EA990017B608 /* Model */,
+				FC4C8B0F2DA993A400A0E315 /* Styles */,
 				FC0C76F02DA717330017B608 /* Resources */,
 				FC0C76CC2DA6EA6E0017B608 /* Preview Content */,
 				FC0C76CD2DA6EA6E0017B608 /* Assets.xcassets */,
@@ -161,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				FC0C76F32DA71A3E0017B608 /* EmpleadosTesting.json */,
+				FC4C8B122DA9B22E00A0E315 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -173,6 +181,14 @@
 				FC12C4F52DA85F51005F0193 /* EmpleadoAvatar.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FC4C8B0F2DA993A400A0E315 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FC4C8B102DA993BF00A0E315 /* LabelFormStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +208,7 @@
 			);
 			name = EmpleadosAPI;
 			packageProductDependencies = (
+				FC4C8B1D2DB25FD300A0E315 /* CompoKit */,
 			);
 			productName = EmpleadosAPI;
 			productReference = FC0C76BA2DA6EA660017B608 /* EmpleadosAPI.app */;
@@ -218,9 +235,13 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FC0C76B12DA6EA660017B608;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FC4C8B1C2DB25FD300A0E315 /* XCRemoteSwiftPackageReference "CompoKit-SMP25" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FC0C76BB2DA6EA660017B608 /* Products */;
 			projectDirPath = "";
@@ -238,6 +259,7 @@
 			files = (
 				FC0C76F42DA71A3E0017B608 /* EmpleadosTesting.json in Resources */,
 				FC0C76D12DA6EA6E0017B608 /* Preview Assets.xcassets in Resources */,
+				FC4C8B132DA9B22E00A0E315 /* Localizable.xcstrings in Resources */,
 				FC0C76D22DA6EA6E0017B608 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +284,7 @@
 				FC0C76EA2DA70BAA0017B608 /* Repository.swift in Sources */,
 				FC0C76E52DA7079A0017B608 /* URLSession.swift in Sources */,
 				FC0C76D72DA6EAAF0017B608 /* EmpleadoDTO.swift in Sources */,
+				FC4C8B112DA993BF00A0E315 /* LabelFormStyle.swift in Sources */,
 				FC12C4F42DA843E6005F0193 /* AsyncImageVM.swift in Sources */,
 				FC12C4F62DA85F51005F0193 /* EmpleadoAvatar.swift in Sources */,
 				FC0C76E72DA7084E0017B608 /* NetworkInteractor.swift in Sources */,
@@ -335,6 +358,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -391,6 +415,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -475,6 +500,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC4C8B1C2DB25FD300A0E315 /* XCRemoteSwiftPackageReference "CompoKit-SMP25" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftyjony/CompoKit-SMP25";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC4C8B1D2DB25FD300A0E315 /* CompoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC4C8B1C2DB25FD300A0E315 /* XCRemoteSwiftPackageReference "CompoKit-SMP25" */;
+			productName = CompoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC0C76B22DA6EA660017B608 /* Project object */;
 }

@@ -16,8 +16,8 @@ struct EmpleadoUpdate: Codable {
     let address: String
     let zipcode: String?
     let avatarURL: String?
-    let gender: Genero
-    let department: Departamento
+    let gender: String
+    let department: String
 }
 
 extension Empleado {
@@ -30,7 +30,7 @@ extension Empleado {
                        address: address,
                        zipcode: zipcode,
                        avatarURL: avatarURL?.absoluteString,
-                       gender: gender,
-                       department: department)
+                       gender: gender.descripcion,
+                       department: department.descripcion)
     }
 }

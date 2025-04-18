@@ -27,14 +27,17 @@ struct ContentView: View {
             }
             .navigationTitle("Employees")
             .navigationDestination(for: Empleado.self) { empleado in
-                EmpleadoEditView(vm: EmpleadoEditVM(empleado: empleado))
+                EmpleadoEditView(vm: EmpleadoEditVM(empleado: empleado),
+                                 empleadosVM: vm)
             }
+        }
+        .refreshable {
+            await vm.getEmpleados()
         }
         .alert("Employee data error",
                isPresented: $vm.showAlert) {} message: {
             Text(vm.errorMsg)
         }
-
     }
 }
 

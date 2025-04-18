@@ -43,7 +43,7 @@ enum Departamento: Int, Codable, CaseIterable, Identifiable {
     var id: Self { self }
 }
 
-enum Genero: Int, Codable, CaseIterable {
+enum Genero: Int, Codable, CaseIterable, Identifiable {
     case male = 1
     case female = 2
     case desconocido = -1
@@ -55,4 +55,6 @@ enum Genero: Int, Codable, CaseIterable {
         case .desconocido: return "Desconocido"
         }
     }
+
+    var id: Self { self }
 }
